@@ -1,6 +1,9 @@
 <component name="ProjectDictionaryState">
   <dictionary name="konstantin">
     <words>
+      <w>cors</w>
+      <w>corsheaders</w>
+      <w>djangorestframework</w>
       <w>editblat</w>
       <w>inlines</w>
       <w>myview</w>

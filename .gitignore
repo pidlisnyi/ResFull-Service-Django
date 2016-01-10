@@ -1,1 +1,14 @@
+# Python compiled byte code
+*.pyc
+
+# SQLite3 database
+*.sqlite3
+
+# Node modules
+node_modules/
+
+# Bower components
+static/blat/bower_components/
+
+# PyCharm logs
 .idea

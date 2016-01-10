@@ -19,7 +19,7 @@
         this.$http.get('/api/blats/')
             .success(function(res){
 
-                debugger
+
 
             })
 
