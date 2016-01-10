@@ -1,0 +1,26 @@
+{
+  "name": "blat",
+  "authors": [
+    "konstantin <Rhfrfpz",
+    "hf1301>"
+  ],
+  "description": "test",
+  "main": "",
+  "moduleType": [],
+  "keywords": [
+    "teat"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.4.8",
+    "bootstrap": "~4.0.0"
+  }
+}

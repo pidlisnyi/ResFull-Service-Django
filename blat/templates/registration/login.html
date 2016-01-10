@@ -1,0 +1,9 @@
+{%  extends 'blat/head.html' %}
+{% block content %}
+    <form action="{% url 'login' %}" method="post">
+        <input type="hidden" name="next" value="{{ next }}" class="form-control">
+        {{ form.as_p }}
+        <button type="submit" class="btn btn-sm btn-info">Login</button>
+        {% csrf_token %}
+    </form>
+{% endblock %}

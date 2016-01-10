@@ -1,0 +1,22 @@
+{% extends 'blat/head.html' %}
+{% load humanize %}
+
+{% block content %}
+    {% if blat_list %}
+    {% for blat in blat_list %}
+        <h3>{{ blat.text }}</h3>
+        <a href="{{ blat.id }}">{{ blat.created_on|naturaltime }}</a>
+        <a href="{{ blat.via }}">{{ blat.via }}</a>
+        <p>{{ blat.created_by }}</p>
+
+        {% if blat.created_by == user %}
+            <a href="{% url 'editblat' pk=blat.id %}">edit this</a>
+        {% endif %}
+    {%  endfor %}
+{% else %}
+(((
+{% endif %}
+
+    <button onclick="helloWorld('WTF?')" class="btn btn-sm btn-info">Hello</button>
+
+{% endblock %}
