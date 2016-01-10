@@ -1,6 +1,6 @@
 {% load staticfiles %}
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="App">
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
@@ -8,7 +8,11 @@
     <script src="{% static 'blat/bower_components/angular/angular.min.js' %}"></script>
     <script src="{% static 'blat/main.js' %}"></script>
 </head>
-<body class="container">
+<body class="container" ng-controller="MainCtrl">
+
+<h1>@@title@@</h1>
+
+
 <h4><a href="{% url 'homepage' %}">App</a></h4>
 <nav class="navbar navbar-default">
 
